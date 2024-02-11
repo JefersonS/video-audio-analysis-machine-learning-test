@@ -1,0 +1,15 @@
+{
+  "name": "ml-internal-training-endpoint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/credential-provider-node": "^3.509.0",
+    "@opensearch-project/opensearch": "^2.5.0"
+  }
+}
