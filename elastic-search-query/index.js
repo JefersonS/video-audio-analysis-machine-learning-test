@@ -22,7 +22,7 @@ exports.handler = async (event, _context) => {
       },
     }),
     requestTimeout: 60000,
-    node: "https://search-es-ml-training-session-test-vcsz5jfcczybbycmzaa6puewh4.us-east-1.es.amazonaws.com",
+    node: "es-open-search-endpoint",
   });
 
   var query = {
