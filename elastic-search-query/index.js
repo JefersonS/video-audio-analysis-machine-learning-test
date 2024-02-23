@@ -22,7 +22,7 @@ exports.handler = async (event, _context) => {
       },
     }),
     requestTimeout: 60000,
-    node: "elastic-search-endpoint",
+    node: "es-open-search-endpoint",
   });
 
   var query = {
