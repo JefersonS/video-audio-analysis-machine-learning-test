@@ -22,13 +22,13 @@ exports.handler = async (event, _context) => {
       },
     }),
     requestTimeout: 60000,
-    node: "https://search-es-ml-training-session-test-vcsz5jfcczybbycmzaa6puewh4.us-east-1.es.amazonaws.com",
+    node: "elastic-search-endpoint",
   });
 
   var query = {
     query: {
       query_string: {
-        fields: ["transcription", "content.label", "content.parents"],
+        fields: ["", "", ""],
         query: searchText,
       },
     },
@@ -36,7 +36,7 @@ exports.handler = async (event, _context) => {
   };
 
   var response = await client.search({
-    index: "movies",
+    index: "",
     body: query,
   });
 

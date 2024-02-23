@@ -7,11 +7,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "reko": "node --experimental-modules rekognitionTest.js",
+    "singleStore": "node --experimental-modules openAiEmbedding.js",
+    "transcription": "node --experimental-modules transcript.js",
     "fix": "node --experimental-modules test.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@aws-sdk/client-rekognition": "^3.504.0"
+    "@aws-sdk/client-rekognition": "^3.504.0",
+    "mysql2": "^3.9.1",
+    "openai": "^4.28.0"
   }
 }

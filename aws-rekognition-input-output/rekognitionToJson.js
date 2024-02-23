@@ -66,11 +66,6 @@ const getLabelDetectionResults = async (startJobId) => {
       content.timestamp = labelDetection.Timestamp;
       content.label = label.Name;
       content.confidence = parseInt(label.Confidence);
-      // Log parent if found
-      content.parents = [];
-      label.Parents.forEach((parent) => {
-        content.parents.push(parent.Name);
-      });
       body.content.push(content);
       // Searh for pagination token, if found, set variable to next token
       if (response.NextToken !== undefined && response.NextToken !== "") {
